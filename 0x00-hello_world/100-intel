@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# check if file is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <C source file>"
+    exit 1
+fi
+
+#Get the input C file anme
+CFILE=$1
+
+#Generate assembly code in Intel syntax
+gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
+
+# Check if assembly file was created successfully
+if [ -f "${CFILE%.c}.s" ]; then
+    echo "Assembly code save in ${CFILE%.c}.s"
+else
+    echo "Error: Failed to generate assembly code."
+fi
