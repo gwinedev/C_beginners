@@ -19,5 +19,4 @@ void rev_string(char *s) {
         /*length1-- assigns before decreasing*/
         s[length1--] = temp;
     }
-    printf("\n");
 }
