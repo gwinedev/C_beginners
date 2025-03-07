@@ -1,7 +1,3 @@
-Got it! Here's a **README** tailored for your learning journey in C:  
-
----
-
 # **C_Beginners – My C Programming Journey 🚀**  
 
 Welcome to my **C_Beginners** repository! This is where I document my learning process as I explore **C programming** from scratch. The goal of this repo is to track my progress, store my practice exercises, and build a solid foundation in C.  
@@ -47,7 +43,3 @@ I believe the best way to learn programming is by writing and experimenting with
 
 ## **📧 Reach Out!**  
 If you're also learning C, feel free to connect! We can share learning resources and progress together. Happy coding! 🎯  
-
----
-
-This keeps it personal and focused on your learning. Let me know if you'd like any tweaks! 😊
