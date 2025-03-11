@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 char *_strncat(char *dest, char *src, int n) {
 
@@ -13,20 +13,4 @@ char *_strncat(char *dest, char *src, int n) {
     }
     dest[length] = '\0';
     return (dest);
-}
-
-int main() {
-
-    char str1[98] = "Junior ";
-    char str2[] = "Senior";
-    char *ptr;
-
-    printf("%s\n", str1);
-    printf("%s\n", str2);
-
-    ptr = _strncat(str1, str2, 8);
-
-    printf("%s\n", ptr);
-
-    return (0);
 }

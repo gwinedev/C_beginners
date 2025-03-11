@@ -1,7 +1,7 @@
 #include "main.h"
 
 char *_strcat(char *dest, char *src) {
-    int length, i;
+    int length = 0, i;
 
     while (dest[length] != '\0')
         length++;
@@ -11,4 +11,5 @@ char *_strcat(char *dest, char *src) {
         length++;
     }
     dest[length] = '\0';
+    return (dest);
 }
