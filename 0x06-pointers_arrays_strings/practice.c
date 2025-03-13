@@ -1,32 +1,42 @@
 #include <stdio.h>
 
-char *_strncat(char *dest, char *src, int n) {
-
-    int length = 0, i;
-
-    while (dest[length] != '\0')
-        length++;
-
-    for (i = 0; src[i] != '\0' && i < n; i++) {
-        dest[length] = src[i];
-        length++;
+/*
+char *_strncpy(char *dest, char *src, int n) {
+    int i;
+    
+    for (i = 0; i < n && src[i] != '\0'; i++) {
+        dest[i + n - 1] = src[i];
     }
-    dest[length] = '\0';
+    dest[i + n - 1] = '\0';
     return (dest);
 }
 
 int main() {
 
-    char str1[98] = "Junior ";
     char str2[] = "Senior";
     char *ptr;
 
-    printf("%s\n", str1);
-    printf("%s\n", str2);
+    printf("Str2 before = %s\n", str2);
+    ptr = _strncpy(str2, "This is it", 10);
 
-    ptr = _strncat(str1, str2, 8);
-
-    printf("%s\n", ptr);
+    printf("Str2 after = %s\n", str2);
+    printf("Str2 from ptr = %s\n", ptr);
 
     return (0);
 }
+    */
+
+    int main() {
+
+        char *src = "Okoeguale"; /*Copy this into dest after n*/
+        char dest[50] = "Godwin";  /*Start accepting from after n*/
+        char *ptr;
+        int i, n = 6;
+
+        for (i = 0; src[i] != '\0'; i++) {
+            dest[n + i] = src[i];
+        }
+        dest[n + i] = '\0';
+        printf ("\n\n%s\n",dest);
+        return (0);
+    }
